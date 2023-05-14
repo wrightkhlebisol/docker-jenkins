@@ -37,7 +37,7 @@ const client = new MongoClient(mongoUrlLocal, mongoClientOptions);
 let databaseName = "user-account";
 
 app.post('/update-profile', async function (req, res) {
-  console.log(req.route, res.body);
+
   let userObj = req.body;
   try {
     await client.connect();
