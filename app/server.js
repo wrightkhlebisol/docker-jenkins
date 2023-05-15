@@ -31,7 +31,7 @@ let mongoUrlDocker = "mongodb://admin:password@mongodb";
 // pass these options to mongo client connect request to avoid DeprecationWarning for current Server Discovery and Monitoring engine
 let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
-const client = new MongoClient(mongoUrlLocal, mongoClientOptions);
+const client = new MongoClient(mongoUrlDocker, mongoClientOptions);
 
 // "user-account" in demo with docker. "my-db" in demo with docker-compose
 let databaseName = "user-account";
